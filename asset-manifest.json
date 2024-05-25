@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/crypto-tracker.github.io/static/css/main.a40faf87.css",
+    "main.js": "/crypto-tracker.github.io/static/js/main.049196aa.js",
+    "static/js/787.05aab820.chunk.js": "/crypto-tracker.github.io/static/js/787.05aab820.chunk.js",
+    "static/media/homeImg.webp": "/crypto-tracker.github.io/static/media/homeImg.832654face954470cf8a.webp",
+    "static/media/support-3.svg": "/crypto-tracker.github.io/static/media/support-3.b8912983f68580f3a354245f42077bd0.svg",
+    "static/media/economyGlobal-2.svg": "/crypto-tracker.github.io/static/media/economyGlobal-2.23ac6907266b747967e64a3d7fdab061.svg",
+    "static/media/safe-2.svg": "/crypto-tracker.github.io/static/media/safe-2.f7ac763e0be77357124116d15022e135.svg",
+    "index.html": "/crypto-tracker.github.io/index.html",
+    "static/media/worldwide-2.svg": "/crypto-tracker.github.io/static/media/worldwide-2.3ae0e54518fbbbd128026ebebfd19b05.svg",
+    "main.a40faf87.css.map": "/crypto-tracker.github.io/static/css/main.a40faf87.css.map",
+    "main.049196aa.js.map": "/crypto-tracker.github.io/static/js/main.049196aa.js.map",
+    "787.05aab820.chunk.js.map": "/crypto-tracker.github.io/static/js/787.05aab820.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a40faf87.css",
+    "static/js/main.049196aa.js"
+  ]
+}
