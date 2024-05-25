@@ -1,0 +1,26 @@
+.t1{
+    animation: goRight linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 600px;
+}
+.t2{
+    animation: goLeft linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 600px;
+}
+
+
+@keyframes goRight {
+    0%{
+       transform: translatex(-1000px);
+    }
+    100% {transform: translatex(0);} 
+ } 
+@keyframes goLeft {
+    0%{
+       transform: translatex(1000px);
+    }
+    100% {transform: translatex(0);} 
+}

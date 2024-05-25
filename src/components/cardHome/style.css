@@ -1,0 +1,14 @@
+.CardCrypto{
+    animation: cardRollDown linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+}
+@keyframes cardRollDown {
+    from{ scale: .5; opacity: 0;
+
+    }
+    to{
+        scale: 1; opacity: 1;
+    }
+}
