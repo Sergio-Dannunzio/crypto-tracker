@@ -14,7 +14,7 @@ export const NavBar: React.FC<{}> = () =>{
                     <Container>
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
                             <Grid item sx={{mt: ".5em", display: "flex"}}>
-                                <a href="/">
+                                <a href="/crypto-tracker.github.io">
                                     <CottageIcon color="primary" fontSize="large"></CottageIcon>
                                 </a>
                             <Grid item sx={{mt: "-.4em"}}>

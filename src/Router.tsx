@@ -10,12 +10,12 @@ import { CoinList } from "./pages/coinList";
 export const AppRouter: React.FC<{}> = () =>{
     return (
         <Routes>
-            <Route path="/crypto-tracker.github.io/" element={<RouterLayout />}>
-                <Route path="/crypto-tracker.github.io/" element={<HomePage />} />
-                <Route path="/crypto-tracker.github.io/login" element={<LoginPage />} />
-                <Route path="/crypto-tracker.github.io/register" element={<RegisterPage />} />
-                <Route path="/crypto-tracker.github.io/coin/:id" element={< CoinPage/>} />
-                <Route path="/crypto-tracker.github.io/coins" element={< CoinList/>} />
+            <Route path="/" element={<RouterLayout />}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/coin/:id" element={< CoinPage/>} />
+                <Route path="/coins" element={< CoinList/>} />
             </Route>
             
         </Routes>

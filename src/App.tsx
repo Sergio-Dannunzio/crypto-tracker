@@ -9,7 +9,7 @@ function App() {
   return (
     <NotificationProvider>
       
-        <BrowserRouter>
+        <BrowserRouter basename="/crypto-tracker.github.io">
           <Suspense fallback={"Cargando..."}>
             <AppRouter></AppRouter>
           </Suspense>
