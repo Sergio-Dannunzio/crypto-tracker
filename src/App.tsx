@@ -8,7 +8,6 @@ import { NotificationProvider } from './context/notification.context';
 function App() {
   return (
     <NotificationProvider>
-      
         <BrowserRouter basename="/crypto-tracker.github.io">
           <Suspense fallback={"Cargando..."}>
             <AppRouter></AppRouter>
