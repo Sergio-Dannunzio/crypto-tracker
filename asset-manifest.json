@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crypto-tracker.github.io/static/css/main.a40faf87.css",
-    "main.js": "/crypto-tracker.github.io/static/js/main.d1654ed1.js",
+    "main.js": "/crypto-tracker.github.io/static/js/main.4c030c88.js",
     "static/js/787.05aab820.chunk.js": "/crypto-tracker.github.io/static/js/787.05aab820.chunk.js",
     "static/media/homeImg.webp": "/crypto-tracker.github.io/static/media/homeImg.832654face954470cf8a.webp",
     "static/media/support-3.svg": "/crypto-tracker.github.io/static/media/support-3.b8912983f68580f3a354245f42077bd0.svg",
@@ -10,11 +10,11 @@
     "index.html": "/crypto-tracker.github.io/index.html",
     "static/media/worldwide-2.svg": "/crypto-tracker.github.io/static/media/worldwide-2.3ae0e54518fbbbd128026ebebfd19b05.svg",
     "main.a40faf87.css.map": "/crypto-tracker.github.io/static/css/main.a40faf87.css.map",
-    "main.d1654ed1.js.map": "/crypto-tracker.github.io/static/js/main.d1654ed1.js.map",
+    "main.4c030c88.js.map": "/crypto-tracker.github.io/static/js/main.4c030c88.js.map",
     "787.05aab820.chunk.js.map": "/crypto-tracker.github.io/static/js/787.05aab820.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a40faf87.css",
-    "static/js/main.d1654ed1.js"
+    "static/js/main.4c030c88.js"
   ]
 }
