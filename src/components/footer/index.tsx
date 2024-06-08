@@ -12,10 +12,13 @@ type HeaderProps = {
 export const FooterComponent: React.FC<HeaderProps> = ({tittle,element}) =>{
     return (
         <div>
-            <Box sx={{width:"100%", height: "350px", backgroundColor: "#0C1418"}}>
-                        <Grid container sx={{height: "100%", width: "100%", display: "flex", flexDirection: "row", justifyContent:"space-between"}}>
-                            <Grid item sx={{ paddingTop: "46px", paddingLeft: "106px"}}>
-                                <Typography variant="h5" >{tittle}</Typography>
+            <Box sx={{width:"100%", backgroundColor: "#0C1418"}}>
+                        <Grid container sx={(theme) => ({ width: "100%", display: "flex", flexDirection: "column", justifyContent:"center", alignContent: "center", paddingBottom: "32px",
+                        [theme.breakpoints.up("sm")]:{
+                            flexDirection: "row", justifyContent:"space-around"
+                        }})}>
+                            <Grid item sx={{ paddingTop: "46px"}}>
+                                <Typography variant="h5" sx={{textAlign: "center"}}>{tittle}</Typography>
                             </Grid>
                             <Grid sx={{ display: "flex"}}>
                                 <Grid sx={{marginTop: "80px", display: "flex", flexDirection: "column"}}>
@@ -33,7 +36,11 @@ export const FooterComponent: React.FC<HeaderProps> = ({tittle,element}) =>{
                                     {'link'}
                                     </Link>
                                 </Grid>
-                                <Grid sx={{marginTop: "80px", marginLeft: "86px", display: "flex", flexDirection: "column"}}>
+                                <Grid sx={(theme) => ({
+                                            marginTop: "80px", display: "flex", flexDirection: "column",marginLeft: "20px",
+                                        [theme.breakpoints.up("lg")]:{
+                                            marginLeft: "86px",
+                                        }})}>
                                     <Typography variant="h5" >Prices</Typography>
                                     <Link href="#" underline="none" sx={{marginTop: "16px"}}>
                                     {'link'}
@@ -48,7 +55,11 @@ export const FooterComponent: React.FC<HeaderProps> = ({tittle,element}) =>{
                                     {'link'}
                                     </Link>
                                 </Grid>
-                                <Grid sx={{marginTop: "80px", marginLeft: "86px", display: "flex", flexDirection: "column"}}>
+                                <Grid sx={(theme) => ({
+                                        display: "none",
+                                        [theme.breakpoints.up("lg")]:{
+                                            marginTop: "80px", marginLeft: "86px", display: "flex", flexDirection: "column"
+                                        }})}>
                                     <Typography variant="h5" >Learn</Typography>
                                     <Link href="#" underline="none" sx={{marginTop: "16px"}}>
                                     {'link'}
@@ -63,7 +74,11 @@ export const FooterComponent: React.FC<HeaderProps> = ({tittle,element}) =>{
                                     {'link'}
                                     </Link>
                                 </Grid>
-                                <Grid sx={{marginTop: "80px", marginLeft: "86px", display: "flex", flexDirection: "column"}}>
+                                <Grid sx={(theme) => ({
+                                        display: "none",
+                                        [theme.breakpoints.up("lg")]:{
+                                            marginTop: "80px", marginLeft: "86px", display: "flex", flexDirection: "column"
+                                        }})}>
                                     <Typography variant="h5" >Company</Typography>
                                     <Link href="#" underline="none" sx={{marginTop: "16px"}}>
                                     {'link'}
@@ -79,15 +94,27 @@ export const FooterComponent: React.FC<HeaderProps> = ({tittle,element}) =>{
                                     </Link>
                                 </Grid>
                             </Grid>
-                            <Grid sx={{marginTop: "46px", display: "flex", paddingRight: "106px"}}>
-                                <Link href="https://www.linkedin.com/in/sergio-dannunzio/" target="_blank" underline="none" sx={{height: "0", marginLeft: "10px"}}>
-                                <LinkedInIcon sx={{fontSize: "42px"}}></LinkedInIcon>
+                            <Grid sx={{marginTop: "46px", display: "flex", justifyContent: "center"}}>
+                                <Link href="https://www.linkedin.com/in/sergio-dannunzio/" target="_blank" underline="none" sx={{height: "0", marginLeft: "5px", marginRight: "5px"}}>
+                                <LinkedInIcon sx={(theme) => ({
+                                        fontSize: "36px",
+                                        [theme.breakpoints.up("sm")]:{
+                                            fontSize: "42px"
+                                        }})}></LinkedInIcon>
                                 </Link>
-                                <Link href="https://github.com/Sergio-Dannunzio" target="_blank" underline="none" sx={{height: "0", marginLeft: "10px"}}>
-                                <GitHubIcon sx={{fontSize: "42px"}}></GitHubIcon>
+                                <Link href="https://github.com/Sergio-Dannunzio" target="_blank" underline="none" sx={{height: "0", marginLeft: "5px", marginRight: "5px"}}>
+                                <GitHubIcon sx={(theme) => ({
+                                        fontSize: "36px",
+                                        [theme.breakpoints.up("sm")]:{
+                                            fontSize: "42px"
+                                        }})}></GitHubIcon>
                                 </Link>
-                                <Link href="mailto:sergiodannunzio@hotmail.com" target="_blank" underline="none" sx={{height: "0", marginLeft: "10px"}}>
-                                <EmailOutlinedIcon sx={{fontSize: "42px"}}></EmailOutlinedIcon>
+                                <Link href="mailto:sergiodannunzio@hotmail.com" target="_blank" underline="none" sx={{height: "0", marginLeft: "5px", marginRight: "5px"}}>
+                                <EmailOutlinedIcon sx={(theme) => ({
+                                        fontSize: "36px",
+                                        [theme.breakpoints.up("sm")]:{
+                                            fontSize: "42px"
+                                        }})}></EmailOutlinedIcon>
                                 </Link>
                             </Grid>
                         </Grid>

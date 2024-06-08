@@ -23,12 +23,20 @@ export const CardHomeComponent: React.FC<CardsProps> = ({title, description, ima
     let navigate = useNavigate();
     
     return (
-        <Container className="CardCrypto" disableGutters maxWidth={false} sx={{width: "280px", height: "500px",
-                marginLeft: "40px", marginRight: "40px", marginTop: "80px", marginBottom: "80px",
-                padding: "20px",
-                display: "flex",flexDirection: "column",alignItems: "center", backgroundColor:"#262C2E",
-                border: "solid", borderColor: "#0C1418", borderRadius: "8px",
-                boxShadow:  "0px 0px 5px 5px #0C1418"}}>
+        <Container className="CardCrypto" disableGutters maxWidth={false}
+                sx={(theme) => ({
+                    maxWidth: "70%",
+                    minHeight: "400px",
+                    marginTop:"40px",
+                    marginBottom: "40px",
+                    padding: "20px",
+                    display: "flex",flexDirection: "column",alignItems: "center", backgroundColor:"#262C2E",
+                    border: "solid", borderColor: "#0C1418", borderRadius: "8px",
+                    boxShadow:  "0px 0px 5px 5px #0C1418",
+                    [theme.breakpoints.up("lg")]:{
+                    width: "20%",
+                    minHeight: "600px",
+                  }})}>
             <Box
           component="img"
           sx={{
